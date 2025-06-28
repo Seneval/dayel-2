@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 
 export default function ProfileTransformation() {
   return (
-    <div className="relative w-full h-full flex items-center justify-center">
+    <div className="relative w-full h-full flex items-center justify-center px-4">
       <motion.svg
         width="500"
         height="500"
         viewBox="0 0 500 500"
-        className="w-full h-full max-w-[400px] mx-auto"
+        className="w-full h-full mx-auto"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
