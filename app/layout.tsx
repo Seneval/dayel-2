@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Dr. Dayel Rosales - Cirujano Maxilofacial',
     description: 'Tu rostro, tu salud, tu transformación',
-    images: ['/imagenes/logo-new.png'],
+    images: ['/dayel-2/imagenes/logo-new.png'],
     locale: 'es_MX',
     type: 'website',
   },

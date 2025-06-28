@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
 
 export default function HeroSimple() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -90,10 +91,10 @@ export default function HeroSimple() {
             >
               <div className="flex -space-x-2">
                 {[
-                  { id: 1, src: '/imagenes/patient1.jpg', name: 'María G.' },
-                  { id: 2, src: '/imagenes/patient2.jpg', name: 'Laura M.' },
-                  { id: 3, src: '/imagenes/patient3.jpg', name: 'Carlos R.' },
-                  { id: 4, src: '/imagenes/patient4.jpg', name: 'Roberto S.' }
+                  { id: 1, src: getImagePath('/imagenes/patient1.jpg'), name: 'María G.' },
+                  { id: 2, src: getImagePath('/imagenes/patient2.jpg'), name: 'Laura M.' },
+                  { id: 3, src: getImagePath('/imagenes/patient3.jpg'), name: 'Carlos R.' },
+                  { id: 4, src: getImagePath('/imagenes/patient4.jpg'), name: 'Roberto S.' }
                 ].map((patient) => (
                   <motion.div
                     key={patient.id}
@@ -129,7 +130,7 @@ export default function HeroSimple() {
             
             <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/imagenes/acercade.jpg"
+                src={getImagePath("/imagenes/acercade.jpg")}
                 alt="Dr. Dayel Rosales"
                 fill
                 className="object-cover object-center"
