@@ -93,40 +93,91 @@ export default function About() {
             style={{ y: rightTranslateY, opacity }}
             className="relative"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-dayel-blue/20 via-transparent to-dayel-purple/20 z-10" />
-              
-              <motion.div
-                className="relative"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Image
-                  src="/imagenes/acercade.jpg"
-                  alt="Dr. Dayel Rosales"
-                  width={600}
-                  height={800}
-                  className="w-full h-auto object-cover"
-                  priority
-                />
-              </motion.div>
-
-              <motion.div
-                className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/70 to-transparent z-20"
-                initial={{ y: 100 }}
-                whileInView={{ y: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                <div className="text-white">
-                  <h4 className="font-display text-2xl mb-2">Especialista en:</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>• Cirugía Ortognática</li>
-                    <li>• Reconstructiva Craneofacial</li>
-                    <li>• Implantes Dentales</li>
-                    <li>• Nervio Periférico</li>
-                  </ul>
+            <div className="relative h-full min-h-[500px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-dayel-blue via-dayel-purple to-dayel-blue p-12 flex items-center justify-center">
+              <div className="relative z-10 text-center text-white">
+                <motion.div
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  transition={{ duration: 0.8 }}
+                  className="mb-8"
+                >
+                  <div className="w-32 h-32 mx-auto rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                    <span className="text-5xl font-bold">15+</span>
+                  </div>
+                </motion.div>
+                
+                <h3 className="font-display text-3xl mb-4">Años de Experiencia</h3>
+                <p className="text-lg mb-8 opacity-90">Transformando vidas con precisión y arte</p>
+                
+                <div className="grid grid-cols-2 gap-6 text-center">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="bg-white/10 backdrop-blur-sm rounded-2xl p-4"
+                  >
+                    <span className="text-3xl font-bold">1000+</span>
+                    <p className="text-sm opacity-80">Cirugías exitosas</p>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    className="bg-white/10 backdrop-blur-sm rounded-2xl p-4"
+                  >
+                    <span className="text-3xl font-bold">5</span>
+                    <p className="text-sm opacity-80">Certificaciones</p>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="bg-white/10 backdrop-blur-sm rounded-2xl p-4"
+                  >
+                    <span className="text-3xl font-bold">3</span>
+                    <p className="text-sm opacity-80">Ubicaciones</p>
+                  </motion.div>
+                  
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="bg-white/10 backdrop-blur-sm rounded-2xl p-4"
+                  >
+                    <span className="text-3xl font-bold">100%</span>
+                    <p className="text-sm opacity-80">Personalizado</p>
+                  </motion.div>
                 </div>
-              </motion.div>
+              </div>
+
+              {/* Animated background elements */}
+              <motion.div
+                className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"
+                animate={{
+                  scale: [1, 1.2, 1],
+                  opacity: [0.3, 0.1, 0.3],
+                }}
+                transition={{
+                  duration: 5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+              <motion.div
+                className="absolute bottom-0 left-0 w-48 h-48 bg-dayel-purple/20 rounded-full blur-3xl"
+                animate={{
+                  scale: [1, 1.3, 1],
+                  opacity: [0.3, 0.1, 0.3],
+                }}
+                transition={{
+                  duration: 5,
+                  delay: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
             </div>
 
             <motion.div

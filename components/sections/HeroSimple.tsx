@@ -1,11 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import ProfileTransformation from '@/components/animations/ProfileTransformation'
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-export default function Hero() {
+export default function HeroSimple() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
   useEffect(() => {
@@ -45,7 +44,7 @@ export default function Hero() {
             >
               Tu rostro,
               <br />
-              <span className="text-gradient">tu confianza,</span>
+              <span className="text-gradient">tu salud,</span>
               <br />
               tu transformación
             </motion.h1>
@@ -127,7 +126,30 @@ export default function Hero() {
             className="relative h-[500px] lg:h-[600px]"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-dayel-blue/10 via-transparent to-dayel-purple/10 rounded-3xl" />
-            <ProfileTransformation />
+            
+            <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/imagenes/acercade.jpg"
+                alt="Dr. Dayel Rosales"
+                fill
+                className="object-cover object-center"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              
+              <div className="absolute inset-0 bg-gradient-to-t from-dayel-blue/20 via-transparent to-transparent" />
+              
+              <motion.div
+                className="absolute bottom-8 left-8 right-8 text-white"
+                initial={{ y: 50, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 1 }}
+              >
+                <h3 className="font-display text-2xl mb-2">Certificado CONACEM #762</h3>
+                <p className="text-sm opacity-90">Especialista en cirugía ortognática y reconstructiva</p>
+              </motion.div>
+            </div>
+
           </motion.div>
         </div>
       </div>
