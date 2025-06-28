@@ -35,7 +35,7 @@ export default function HeroSimple() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left order-2 lg:order-1 w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
+            className="text-center lg:text-left w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
           >
             <motion.h1
               className="font-display text-4xl sm:text-5xl lg:text-7xl text-dayel-blue mb-6"
@@ -124,7 +124,7 @@ export default function HeroSimple() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-1 lg:order-2 w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
+            className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-dayel-blue/10 via-transparent to-dayel-purple/10 rounded-3xl" />
             
@@ -133,7 +133,7 @@ export default function HeroSimple() {
                 src={getImagePath("/imagenes/acercade.jpg")}
                 alt="Dr. Dayel Rosales"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-top"
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
