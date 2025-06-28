@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://seneval.github.io/dayel-2'),
   title: 'Dr. Dayel Rosales - Cirujano Maxilofacial',
   description: 'Especialista en cirugía ortognática, reconstructiva craneofacial, bucal e implantes dentales. Certificado CONACEM #762',
   keywords: ['cirujano maxilofacial', 'cirugía ortognática', 'implantes dentales', 'Torreón', 'Gómez Palacio'],

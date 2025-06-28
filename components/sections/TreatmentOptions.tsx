@@ -112,7 +112,7 @@ export default function TreatmentOptions() {
               onClick={() => setSelectedTreatment(treatment.id === selectedTreatment ? null : treatment.id)}
               className={`relative p-8 rounded-3xl cursor-pointer transition-all duration-300 ${
                 selectedTreatment === treatment.id
-                  ? 'bg-gradient-to-br ' + treatment.gradient + ' text-white shadow-2xl scale-105'
+                  ? `bg-gradient-to-br ${treatment.gradient} text-white shadow-2xl scale-105`
                   : 'bg-white hover:shadow-xl'
               }`}
             >

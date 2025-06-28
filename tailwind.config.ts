@@ -48,7 +48,6 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-mesh': 'url("data:image/svg+xml,%3Csvg width="100" height="100" xmlns="http://www.w3.org/2000/svg"%3E%3Cdefs%3E%3Cfilter id="wave"%3E%3CfeTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" result="turbulence" seed="1"%3E%3C/feTurbulence%3E%3CfeColorMatrix in="turbulence" type="saturate" values="30"%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Crect width="100" height="100" filter="url(%23wave)" opacity="0.05"%3E%3C/rect%3E%3C/svg%3E")',
       },
     },
   },
