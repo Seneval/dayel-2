@@ -52,19 +52,19 @@ export default function About() {
                 Dr. Dayel Gerardo Rosales Díaz Mirón
               </h3>
               
-              <div className="space-y-4 max-w-md mx-auto lg:max-w-none">
+              <div className="space-y-4">
                 {credentials.map((cred, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="flex items-start gap-4 group justify-center lg:justify-start"
+                    className="flex items-start gap-4 group"
                   >
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-dayel-blue to-dayel-purple flex items-center justify-center text-2xl transform group-hover:scale-110 transition-transform flex-shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-dayel-blue to-dayel-purple flex items-center justify-center text-2xl transform group-hover:scale-110 transition-transform">
                       {cred.icon}
                     </div>
-                    <div className="text-center lg:text-left">
+                    <div>
                       <h4 className="font-semibold text-dayel-blue">{cred.title}</h4>
                       <p className="text-sm text-dayel-gray">{cred.detail}</p>
                     </div>

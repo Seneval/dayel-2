@@ -116,17 +116,17 @@ export default function TreatmentOptions() {
                   : 'bg-white hover:shadow-xl'
               }`}
             >
-              <div className={`text-5xl mb-4 ${selectedTreatment === treatment.id ? 'animate-bounce' : ''}`}>
+              <div className={`text-5xl mb-4 text-center ${selectedTreatment === treatment.id ? 'animate-bounce' : ''}`}>
                 {treatment.icon}
               </div>
               
-              <h3 className={`font-display text-2xl mb-3 ${
+              <h3 className={`font-display text-2xl mb-3 text-center ${
                 selectedTreatment === treatment.id ? 'text-white' : 'text-dayel-blue'
               }`}>
                 {treatment.title}
               </h3>
               
-              <p className={`mb-4 ${
+              <p className={`mb-4 text-center ${
                 selectedTreatment === treatment.id ? 'text-white/90' : 'text-dayel-gray'
               }`}>
                 {treatment.description}
