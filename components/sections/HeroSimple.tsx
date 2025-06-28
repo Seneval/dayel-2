@@ -29,16 +29,16 @@ export default function HeroSimple() {
         transition={{ type: "spring", damping: 30 }}
       />
 
-      <div className="relative z-10 container mx-auto px-4 py-20 min-h-screen flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 container mx-auto px-6 sm:px-8 lg:px-8 py-20 min-h-screen flex items-center">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center lg:text-left"
+            className="text-center lg:text-left order-2 lg:order-1 w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
           >
             <motion.h1
-              className="font-display text-5xl lg:text-7xl text-dayel-blue mb-6"
+              className="font-display text-4xl sm:text-5xl lg:text-7xl text-dayel-blue mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -124,7 +124,7 @@ export default function HeroSimple() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="relative h-[500px] lg:h-[600px]"
+            className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-1 lg:order-2 w-full max-w-lg mx-auto lg:max-w-none lg:mx-0"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-dayel-blue/10 via-transparent to-dayel-purple/10 rounded-3xl" />
             
