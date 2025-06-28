@@ -29,8 +29,8 @@ export default function Hero() {
         transition={{ type: "spring", damping: 30 }}
       />
 
-      <div className="relative z-10 container mx-auto px-4 py-20 min-h-screen flex items-center">
-        <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -38,7 +38,7 @@ export default function Hero() {
             className="text-center lg:text-left order-2 lg:order-1"
           >
             <motion.h1
-              className="font-display text-5xl lg:text-7xl text-dayel-blue mb-6"
+              className="font-display text-4xl sm:text-5xl lg:text-7xl text-dayel-blue mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}

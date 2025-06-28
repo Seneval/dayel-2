@@ -9,7 +9,7 @@ export default function ProfileTransformation() {
         width="500"
         height="500"
         viewBox="0 0 500 500"
-        className="w-full h-full"
+        className="w-full h-full max-w-[400px] mx-auto"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
