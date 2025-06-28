@@ -221,7 +221,7 @@ export default function ProfileTransformation() {
       </motion.svg>
 
       <motion.div
-        className="absolute bottom-10 left-0 right-0 text-center"
+        className="absolute bottom-4 sm:bottom-10 left-0 right-0 text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2 }}
@@ -236,8 +236,8 @@ export default function ProfileTransformation() {
             repeatType: "reverse"
           }}
         >
-          <h3 className="text-dayel-blue font-display text-xl mb-2">Tu perfil ideal</h3>
-          <p className="text-dayel-purple text-sm">Armonía y balance facial</p>
+          <h3 className="text-dayel-blue font-display text-lg sm:text-xl mb-2">Tu perfil ideal</h3>
+          <p className="text-dayel-purple text-xs sm:text-sm">Armonía y balance facial</p>
         </motion.div>
       </motion.div>
     </div>
