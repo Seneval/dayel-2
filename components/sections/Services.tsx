@@ -119,15 +119,17 @@ export default function Services() {
                 {/* Front of card */}
                 <div className="absolute inset-0 w-full h-full backface-hidden">
                   <div className="h-full p-8 rounded-3xl bg-white shadow-xl hover:shadow-2xl transition-shadow">
-                    <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center text-4xl mb-6 transform hover:scale-110 transition-transform`}>
-                      {service.icon}
+                    <div className="flex justify-center mb-6">
+                      <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center text-4xl transform hover:scale-110 transition-transform`}>
+                        {service.icon}
+                      </div>
                     </div>
                     
-                    <h3 className="font-display text-2xl text-dayel-blue mb-3">
+                    <h3 className="font-display text-2xl text-dayel-blue mb-3 text-center">
                       {service.title}
                     </h3>
                     
-                    <p className="text-dayel-gray mb-6">
+                    <p className="text-dayel-gray mb-6 text-center">
                       {service.description}
                     </p>
                     
